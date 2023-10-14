@@ -25,8 +25,20 @@ use std::vec::Vec;
     }
 
 
-    pub trait Testing {
-        fn Printer(){
-            println!("test");
-        }
+    pub trait msg_bulletin{
+
+    }
+
+    pub trait Module {
+        //fn is_exclusive()->bool;
+
+        //fn get_messages()->Box<dyn msg_bulletin>;
+
+        fn start();
+
+        //fn before_frame();
+
+        //fn after_frame();
+
+        fn finish();
     }
