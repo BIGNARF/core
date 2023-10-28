@@ -10,7 +10,7 @@ pub trait Module {
     //fn is_exclusive()->bool;
 
     //fn get_messages()->Box<dyn msg_bulletin>;
-    fn new<T>(context: T)->Self;
+    fn new(context: winit::event_loop::EventLoop<()>)->Self;
 
     fn start(&self);
   
