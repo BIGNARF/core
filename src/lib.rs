@@ -10,14 +10,15 @@ pub trait Module {
     //fn is_exclusive()->bool;
 
     //fn get_messages()->Box<dyn msg_bulletin>;
+    fn new();
 
-    fn start();
+    fn start(&self);
   
     //fn before_frame();
 
-    fn process_frame();
+    fn process_frame(&self);
 
     //fn after_frame();
 
-    fn finish();
+    fn finish(&self);
 }
